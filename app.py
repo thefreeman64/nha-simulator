@@ -1,6 +1,11 @@
 import streamlit as st
 
+# Set page configuration
 st.set_page_config(page_title="National Handball Association", layout="centered")
+
+# Sidebar navigation (MUST come before the if-statement using `page`)
+st.sidebar.title("Navigation")
+page = st.sidebar.radio("Go to:", ["Home", "Basics of Handball", "Betting Simulator"])
 
 # Page Routing
 if page == "Home":
