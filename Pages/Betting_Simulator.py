@@ -1,8 +1,6 @@
 import streamlit as st
 import matplotlib.pyplot as plt
 
-st.set_page_config(page_title="Betting Simulator", layout="centered")
-
 from simulator import (
     simulate_season,
     simulate_playoffs,
@@ -31,7 +29,6 @@ def format_team_display(name, stats, seed):
     return f"{seed}. {name} ({stats['W']} W - {stats['L']} L, {odds_pct:.1f}% to win)"
 
 def run_simulation():
-    st.set_page_config(layout="wide")
     st.title("NHA Season & Playoff Simulator")
 
     # Initialize session state

@@ -1,27 +1,41 @@
 import streamlit as st
 
-st.set_page_config(page_title="Basics of Handball", layout="centered")
+# DO NOT use st.set_page_config() in subpages
 
-st.markdown("## Basics of Handball")
+# Title
+st.title("🏐 Basics of Handball")
 
-st.markdown("### **Rules of Handball**")
-st.write("""
-Handball is based off of the already existing kid's game of four-square, with a couple modifications. Two teams of four go against each other on opposite sides of a chest-high net in the middle of a 15 by 7m rectangle.
+# Rules Section
+st.header("📋 Rules of Handball")
+st.markdown("""
+Handball is a team sport derived from the classic playground game of four-square, adapted with unique competitive rules. 
 
-A match starts with the lineman (positions explained in the "Positions" section) serving from the back line and a match will not end until one opponent bounces the ball into the opponents' rectangle and then having it touch the ground anywhere outside of aforementioned rectangle.
-
-This results in 1 point, and a team must reach 21 points to win, with tie-breakers at 20 pushing the win condition to 22, tie-breakers at 21 pushing the win condition to 23, and so on.
+- Two teams of four players compete on opposite sides of a chest-high net.
+- The court measures **15 by 7 meters**, divided by the net at the center.
+- A match starts with the **Lineman** serving from the back line.
+- Teams score **1 point** by bouncing the ball into the opponent's rectangle and then causing it to land anywhere **outside** that area.
+- Games are played to **21 points**, but:
+  - If tied at 20–20, win condition increases to 22.
+  - If tied again at 21–21, it moves to 23, and so on.
 """)
 
-st.markdown("### **Positions**")
-st.write("""
-There are four positions on each side.
+# Positions Section
+st.header("🧍 Player Positions")
+st.markdown("""
+Each team fields **four players**, each with a specific role. While roles are flexible, here's the general breakdown:
 
-**Forwards**: Right up against the net are the two forwards. Their role is to score points, so they are typically tall to cover the space above the net and able to smash the ball down or maneuver around defenders. One is the main forward and the other is a secondary forward with more play-making and defensive duties.
+- **Forwards (2 players):**  
+  Positioned at the net. Their main objective is scoring.  
+  - *Main Forward*: Usually tall and aggressive, excels in smashing and net control.  
+  - *Secondary Forward*: Often more tactical, combining offensive and defensive duties.
 
-**Center**: On the backline, the center is the playmaker who runs the offense with assists and sometimes helps rebound (stopping the ball from exiting the court).
+- **Center:**  
+  Stays near the backline. Acts as the **playmaker**, setting up attacks and assisting forwards.  
+  Also supports in rebounds and transitions.
 
-**Lineman**: The primary defender and rebounder, often bigger and athletic, also serving the ball for most teams. This role is often interchangeable with the center.
+- **Lineman:**  
+  The key **defender and rebounder**. Typically the player who serves.  
+  Strong and agile, often interchangeable with the Center role.
 
-All roles are fluid, and players may shift based on skill sets.
+> 📝 *Note: Roles are fluid, and players often switch based on skills and strategy.*
 """)
