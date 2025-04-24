@@ -8,6 +8,10 @@ from simulator import (
     calculate_odds,
 )
 
+st.title(Betting Simulator")
+st.write("This is the Betting Simulator page.")
+print("Betting_simulator.py loaded")  # Debugging statement
+
 # Utility function to flatten nested team lists
 def extract_teams(bracket_side):
     team_set = set()

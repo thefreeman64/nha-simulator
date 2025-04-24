@@ -1,9 +1,11 @@
 import streamlit as st
 
-# DO NOT use st.set_page_config() in subpages
-
 # Title
+import streamlit as st
+
 st.title("🏐 Basics of Handball")
+st.write("This is the Basics of Handball page.")
+print("Basics_of_Handball.py loaded")  # Debugging statement
 
 # Rules Section
 st.header("📋 Rules of Handball")
