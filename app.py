@@ -2,10 +2,6 @@ import streamlit as st
 
 st.set_page_config(page_title="National Handball Association", layout="centered")
 
-# Sidebar navigation
-st.sidebar.title("Navigation")
-page = st.sidebar.radio("Go to:", ["Home", "Basics of Handball", "Betting Simulator"])
-
 # Page Routing
 if page == "Home":
     st.markdown("<h1 style='text-align: center; font-size: 48px;'>Welcome to the National Handball Association!</h1>", unsafe_allow_html=True)
