@@ -1,9 +1,13 @@
 import streamlit as st
 
-# Set page configuration
-st.set_page_config(page_title="National Handball Association", layout="centered")
+# Set the app config — this enables the sidebar
+st.set_page_config(
+    page_title="National Handball Association",
+    layout="centered",
+    initial_sidebar_state="expanded"  # 👈 This makes sure the sidebar shows up
+)
 
-# Main homepage content
+# Home page content
 st.markdown("<h1 style='text-align: center; font-size: 48px;'>Welcome to the National Handball Association!</h1>", unsafe_allow_html=True)
 
 st.markdown("""
